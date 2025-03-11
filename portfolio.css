@@ -1,0 +1,113 @@
+/* Reset default margin and padding for all elements */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Global Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f9e3e6; /* Light pastel pink */
+    color: #333;
+    line-height: 1.6;
+    padding: 0 20px;
+}
+
+/* Header and Navigation */
+header {
+    background-color: #f6c1c7; /* Soft pastel pink */
+    padding: 15px 0;
+    text-align: center;
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 18px;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+nav a:hover {
+    color: #f9e3e6; /* Light pastel pink */
+}
+
+/* Main Content */
+main {
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 30px;
+    background-color: #fff; /* White background for content */
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    font-size: 2.5em;
+    text-align: center;
+    margin-bottom: 20px;
+    color: #e53d56; /* Soft pink color */
+}
+
+p {
+    font-size: 1.2em;
+    text-align: center;
+    margin-bottom: 30px;
+    color: #555;
+}
+
+/* Project Section */
+section {
+    margin-bottom: 40px;
+}
+
+section h2 {
+    font-size: 2em;
+    margin-bottom: 10px;
+    color: #e53d56; /* Soft pink color */
+}
+
+section p {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+    color: #666;
+}
+
+section a {
+    font-size: 1.1em;
+    color: #f53c6f; /* Pink color for links */
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+section a:hover {
+    color: #e53d56; /* Darker pink on hover */
+}
+
+/* Responsiveness */
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    main {
+        padding: 20px;
+    }
+
+    h1 {
+        font-size: 2em;
+    }
+
+    h2 {
+        font-size: 1.8em;
+    }
+}
